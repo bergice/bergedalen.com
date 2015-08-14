@@ -360,11 +360,6 @@ background: rgba(27, 147, 199, 0.4)
     font-weight: 300;
     color: #666;
 }
-.mail img {
-    display: inline;
-    width: 24px;
-    height: 24px;
-}
 .frm input[type="text"], .frm input[type="email"] {
     background: #fcfcfc !important;
     border-radius: 0 !important;
