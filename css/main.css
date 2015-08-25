@@ -35,10 +35,30 @@ body {
 .site-navbar li a {
     -webkit-transition: border-radius 0.25s; /* Safari */
      transition: border-radius 0.25s;
-     border-radius: 17px;
-     margin: 2px;
+     
+    border-radius: 17px;
+     
+    margin: 2px;
     -webkit-transition: background 1s; /* Safari */
-     transition: background 1s;
+     
+    transition: background 1s;
+     
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.site-navbar li a::after {
+    content: "";
+    display: block;
+    min-width: 100px;
+    margin-top: 1px;
+    border-bottom: 1px solid #8f8f8f;
+    border-color: #8f8f8f;
+    opacity: 0;
+}
+.site-navbar li a:hover::after {
+    border-color: #ff3333;
 }
 .site-navbar a {
     color: #222;
@@ -113,8 +133,8 @@ body {
     padding-bottom: 80px;
 }
 #about h3, #services h3, #portfolio h3, #team h3, #blog h3, #contact h3 {
-    font-size: 4em;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-family: sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 35px;
@@ -136,7 +156,6 @@ body {
 #about img:hover {
     opacity: 1;
 }
-
 #about .profileimg:hover ul {
     display: block;
 }
@@ -213,6 +232,7 @@ body {
     margin-right: 30px;
     margin-top: 30px;
     color: #888;
+    
 }
 .icon-about a i.fa-weibo:hover {
     color: #d52b2b;
@@ -261,16 +281,6 @@ body {
     font-size: 1.15em;
     color: #000000;
 }
-#services .tjenester-avsnitt .paragraph::after {
-    display: block;
-    content: "";
-    height: 1px;
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background: #1b2124;
-    border-bottom: 1px solid #d5d5d5;
-}
 #services .tjenester-avsnitt ul {
     margin-top: 30px;
     margin-left: 30px;
@@ -291,7 +301,7 @@ body {
     background-color: #fff;
     opacity: 0.9;
 }
-#services span .undersøkelser {
+#services span .undersÃ¸kelser {
     all: inherit;
     background-image: url("../images/3.jpg");
 }
@@ -358,6 +368,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 1em;
 }
+#contact iframe {
+    float: right;
+
+    border: 1px solid #dedede;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);  
+}
 .mail {
     font-size: 1.3em;
     font-family: 'Open Sans', sans-serif;
@@ -369,6 +386,7 @@ body {
 .mail span {
     position: fixed;
     left: 16px;
+    margin-left: 5px;
 }
 .frm input[type="text"], .frm input[type="email"] {
     background: #fcfcfc !important;
