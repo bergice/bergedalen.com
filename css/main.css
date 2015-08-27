@@ -51,7 +51,6 @@ body {
 }
 .navbar-brand img {
     vertical-align: middle;
-    width: 300px;
 }
 .navbar-toggle .icon-bar {
     background: #bdbdbd;
@@ -70,12 +69,8 @@ body {
 .carousel-inner .item img {
     width: 100%;
 }
-.carousel-caption {
-    bottom: 80px;
-}
 .carousel-caption h3 {
     font-size: 3.5em;
-    display: inline-block;
 }
 .carousel-caption span {
     display: inline-block;
@@ -497,14 +492,18 @@ button.close {
            padding: 0;
       }
       .carousel-caption h3 {
-          font-size: 1em;
+          font-size: 3em;
      }
 
     .container {
         width: 767px;
     }
     .navbar-brand img {
-        width: 250px;
+        width: 270px;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;   
+        margin: auto;  
     }
     .navbar-right {
         margin-right: 0px;
@@ -524,12 +523,16 @@ button.close {
 @media (max-width: 767px) {
         #about h3, #services h3, #portfolio h3, #team h3, #blog h3, #contact h3 {
             font-size: 3em;
+            text-align: center;
        }
        .frm .col-md-6, .frm .col-md-12 {
            padding: 0;
       }
+      .carousel-caption h3 {
+          font-size: 2.1em;
+     }
       .carousel-caption span {
-          font-size: 0.7em;
+          font-size: 1.1em;
      }
      .alignright, .alignleft {
          width: 100%;
@@ -544,22 +547,19 @@ button.close {
         width: 0%;
     }
 
+    .navbar-brand img { 
+        position: absolute;
+        top: 0;  
+        bottom: 67%;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+        width: 300px;
+    }
+
 
     .container {
         width:inherit;
-    }
-    
-    .site-navbar li a {
-        margin-left: 3em;
-        text-align: left;
-        border-bottom: 1px solid #f2f2f2;
-    }
-
-    .site-header {
-        border-bottom: 1px solid #6f6f6f;
-    }
-    .site-navbar {
-        border-bottom: 1px solid #6f6f6f;
     }
 
 }
