@@ -19,15 +19,37 @@ body {
 }
 
 /* Navbar */
+.navbar-contact {
+    display:none;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1111;
+    opacity: 0.8;
+    border-style: solid;
+}
+.navbar-contact ul li{
+    display: inline;
+    font-size: 1.1em;
+    color: #666;
+    margin-right: 10px;
+}
 .site-navbar {
+    /*top: 50px;*/
     background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#fcfcfc), color-stop(100%,#f9f9f9));
     background: -webkit-linear-gradient(top,  #fcfcfc 2%,#f9f9f9 100%);
     background: linear-gradient(to bottom,  #fcfcfc 2%,#f9f9f9 100%);
     border-bottom: 1px solid #dedede;
     min-height: 50px;
     padding: 20px 0;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
   -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);  
+}
+.nav .navbar-nav .navbar-right {
+    padding:200px;
 }
 .site-navbar li a {
     -webkit-transition: background 0.25s; /* Safari */
@@ -41,6 +63,7 @@ body {
     font-weight: bold;
 
     min-width: 120px;
+
 }
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: #fff;
@@ -68,6 +91,7 @@ body {
 /* carousel */
 .carousel-inner .item img {
     width: 100%;
+    max-height: 600px;
 }
 .carousel-caption h3 {
     font-size: 3.5em;
@@ -135,7 +159,7 @@ body {
     opacity: 0.8;
 }
 .client a, .b-client img {
-    display: block;
+    display: inline-block;
 }
 
 /* TOOLTIPS */
@@ -495,8 +519,17 @@ button.close {
           font-size: 3em;
      }
 
+     .navbar-contact {
+         display: none;
+     }
+
     .container {
         width: 767px;
+    }
+    .site-navbar {
+        padding-right: 0px;
+        padding-left: 0px;
+        top: 00px;
     }
     .navbar-brand img {
         width: 270px;
@@ -557,6 +590,21 @@ button.close {
         width: 300px;
     }
 
+    .site-navbar {
+        padding-bottom: 0px;
+    }
+    .navbar-collapse ul {
+            padding: 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin: 0px;
+    }
+    .navbar-collapse ul li {
+        padding: 5px;
+    }
+    .navbar-collapse ul li:not(:last-child){
+        border-bottom: 1px solid #f4f4f4;
+    }
 
     .container {
         width:inherit;
